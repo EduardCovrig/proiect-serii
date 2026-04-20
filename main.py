@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller, grangercausalitytests
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
@@ -12,14 +11,13 @@ import warnings
 warnings.filterwarnings("ignore")  # Ascundem avertismentele estetice
 
 #date.csv -> datele reale lunare (2020 - 2023) pentru cursul mediu BNR,
-# Inflatia anualizată (INS) si ROBOR la 3 luni.
-
+# Inflatia anualizata (INS) si ROBOR la 3 luni.
 
 # 0. PREGATIREA DATELOR
 # Citim fisierul CSV creat de noi
 df = pd.read_csv('date.csv', index_col='Data', parse_dates=True)
 
-# Setam frecventa pe final de luna (ME = Month End) ca sa scapam de eroarea de Pandas
+# Setam frecventa pe final de luna (ME = Month End)
 df.index.freq = 'ME'
 
 # ==========================================
