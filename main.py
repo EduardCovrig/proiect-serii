@@ -10,7 +10,7 @@ import warnings
 
 warnings.filterwarnings("ignore")  # Ascundem avertismentele estetice
 
-#date.csv -> datele reale lunare (2020 - 2023) pentru cursul mediu BNR,
+#date.csv -> datele reale lunare (2020 - 2026) pentru cursul mediu BNR,
 # Inflatia anualizata (INS) si ROBOR la 3 luni.
 
 # 0. PREGATIREA DATELOR
