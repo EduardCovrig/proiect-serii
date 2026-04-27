@@ -96,7 +96,7 @@ irf = var_results.irf(5)
 fig_irf = irf.plot(response='Curs_EUR', impulse='ROBOR')
 fig_irf.suptitle('Raspunsul Cursului EUR la un soc in ROBOR', fontsize=12)
 fig_irf.tight_layout()
-plt.savefig('02_Raspuns_Impuls_IRF.png', dpi=300, bbox_inches='tight')
+plt.savefig('02_Impuls_IRF.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # 2.5 Descompunerea Variantei (FEVD)
